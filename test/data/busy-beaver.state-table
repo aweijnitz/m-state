@@ -1,0 +1,14 @@
+# Busy Beaver
+# 5-tuple representation (state, current symbol, write symbol, next dir [R,L,N], next state (H = Halt))
+# From http://en.wikipedia.org/wiki/Turing_machine#Additional_details_required_to_visualize_or_implement_Turing_machines
+#
+# Important note!
+# The rows will be sorted in ascending alphabetical order by state name (A, B, C, ...)
+#
+A,0,1,R,B
+A,1,1,L,C
+B,0,1,L,A
+B,1,1,R,B
+C,0,1,L,B
+C,1,1,N,H
+

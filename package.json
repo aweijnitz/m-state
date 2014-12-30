@@ -1,0 +1,29 @@
+{
+  "name": "m-state",
+  "version": "0.0.1",
+  "description": "Command line Turing Machine runner",
+  "main": "./bin/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./bin/app.js",
+    "test": "./node_modules/mocha/bin/mocha -R spec"
+  },
+  "keywords": [
+    "Turing",
+    "Machie",
+    "node.js"
+  ],
+  "author": "Anders Weijnitz",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.4.2"
+  },
+  "dependencies": {
+    "line-by-line": "^0.1.3",
+    "minimist": "^1.1.0",
+    "q": "^1.1.2"
+  }
+}
