@@ -1,7 +1,7 @@
 # A Turing Machine Implementation For Node.js
 
 Build status:
-[![Build Status]](https://travis-ci.org/aweijnitz/m-state.png)](https://travis-ci.org/aweijnitz/m-state)
+[![Build Status](https://travis-ci.org/aweijnitz/m-state.png)](https://travis-ci.org/aweijnitz/m-state)
 
 ## Installation
 
