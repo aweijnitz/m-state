@@ -42,6 +42,7 @@ describe('MachineRunner', function () {
         var r = new Runner(takeTwo);
         r.on('halt', function (status) {
             (status.state).should.equal('H');
+            (status.isHalted).should.be.true;
             done();
         });
         r.run();
