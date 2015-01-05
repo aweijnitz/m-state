@@ -48,5 +48,28 @@ describe('MachineRunner', function () {
         r.run();
     });
 
+    it('Should allow iteration of all tape symbols', function () {
+        var r = new Runner(takeTwo);
+        r.run();
+        var nrSymbols = 0;
+        var iter = r.tapeIterator();
+        while(iter.next() != null) { nrSymbols++; };
+        (nrSymbols).should.equal(2);
+    });
+
+    it('Should allow iteration of all tape symbols using each', function () {
+        var r = new Runner(takeTwo);
+        r.run();
+        var nrSymbols = 0;
+        var concat = '';
+        var iter = r.tapeIterator();
+        iter.each(function(item) {
+            concat += item;
+            nrSymbols++;
+        });
+        (nrSymbols).should.equal(2);
+        (concat).should.equal('11');
+    });
+
 
 });
